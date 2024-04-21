@@ -13,7 +13,7 @@ help: Makefile
 ## install: installs dependencies under venv
 .PHONY: install
 install:
-	python3.8 -m venv ~/.venv
+	python -m venv ~/.venv
 	pip install --upgrade pip
 	make post-install
 
