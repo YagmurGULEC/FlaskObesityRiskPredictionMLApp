@@ -1,3 +1,6 @@
+[![Flask ML prediction with Github Actions](https://github.com/YagmurGULEC/FlaskObesityRiskPredictionMLApp/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/YagmurGULEC/FlaskObesityRiskPredictionMLApp/actions/workflows/pythonapp.yml)
+
+
 # dockerized-flask-app-for-multiclass-obesity-risk-prediction  
 
 A Flask app is to predict a obesity risk from a given input. The machine model was trained on data posted on https://www.kaggle.com/competitions/playground-series-s4e2. The model is a Pytorch model saved. 
