@@ -1,0 +1,11 @@
+{
+    "NObeyesdad": {
+        "0": "Overweight_Level_II",
+        "1": "Normal_Weight",
+        "2": "Insufficient_Weight",
+        "3": "Obesity_Type_III",
+        "4": "Obesity_Type_II",
+        "5": "Overweight_Level_I",
+        "6": "Obesity_Type_I"
+    }
+}

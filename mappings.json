@@ -1,0 +1,97 @@
+{
+    "Gender": {
+        "Male": 0,
+        "Female": 1
+    },
+    "Age": {
+        "interval": [
+            14.0,
+            61.0
+        ]
+    },
+    "Height": {
+        "interval": [
+            1.45,
+            1.975663
+        ]
+    },
+    "Weight": {
+        "interval": [
+            39.0,
+            165.057269
+        ]
+    },
+    "family_history_with_overweight": {
+        "yes": 0,
+        "no": 1
+    },
+    "FAVC": {
+        "yes": 0,
+        "no": 1
+    },
+    "FCVC": {
+        "interval": [
+            1.0,
+            3.0
+        ]
+    },
+    "NCP": {
+        "interval": [
+            1.0,
+            4.0
+        ]
+    },
+    "CAEC": {
+        "Sometimes": 0,
+        "Frequently": 1,
+        "no": 2,
+        "Always": 3
+    },
+    "SMOKE": {
+        "no": 0,
+        "yes": 1
+    },
+    "CH2O": {
+        "interval": [
+            1.0,
+            3.0
+        ]
+    },
+    "SCC": {
+        "no": 0,
+        "yes": 1
+    },
+    "FAF": {
+        "interval": [
+            0.0,
+            3.0
+        ]
+    },
+    "TUE": {
+        "interval": [
+            0.0,
+            2.0
+        ]
+    },
+    "CALC": {
+        "Sometimes": 0,
+        "no": 1,
+        "Frequently": 2
+    },
+    "MTRANS": {
+        "Public_Transportation": 0,
+        "Automobile": 1,
+        "Walking": 2,
+        "Motorbike": 3,
+        "Bike": 4
+    },
+    "NObeyesdad": {
+        "Overweight_Level_II": 0,
+        "Normal_Weight": 1,
+        "Insufficient_Weight": 2,
+        "Obesity_Type_III": 3,
+        "Obesity_Type_II": 4,
+        "Overweight_Level_I": 5,
+        "Obesity_Type_I": 6
+    }
+}
