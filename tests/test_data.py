@@ -1,15 +1,11 @@
+"""Tests to validate the input data 
+for the prediction endpoint with the right and wrong input data."""
 import pytest
-from flask import g, session
-from app.init_app import init_app
-
-
 
 
 @pytest.mark.parametrize(
     ("data"),
-    (  #data with missing key values
-        {  
-            "Height":1.57,
+    ({      "Height":1.57,
             "Weight":64.0,
             "Age":21.0,
             "family_history_with_overweight":"yes",
@@ -36,22 +32,18 @@ from app.init_app import init_app
             "TUE": 1.0,
             "CALC": "Sometimes",
             "MTRANS": "Public_Transportation"
-    },
-            
-    )
+    },)
 )
 def test_validate_wrong_input(client, data):
-    
+    """Test with the wrong input data."""
     response=client.post("/predict",headers={"Content-Type": "application/json"},json=data)
     assert response.json['data']['error']=="Data not in the right format"
-    
-
 
 @pytest.mark.parametrize(
     ("data"),
     (
         #test with the right input
-        {
+        {   
             "Gender": "Male",
             "Age": 21.0,
             "Height": 1.57,
@@ -70,8 +62,7 @@ def test_validate_wrong_input(client, data):
             "MTRANS": "Public_Transportation"
     },
     #test with the right input but not in the same order
-    {   
-             "Age": 21.0,
+    {       "Age": 21.0,
             "Gender": "Male",
            "Height": 1.57,
             "Weight": 64.0,
@@ -129,10 +120,8 @@ def test_validate_wrong_input(client, data):
     )
 )
 def test_validate_right_input(client, data):
-    
+    """Test with the right input data but in different order"""
     response=client.post("/predict",headers={"Content-Type": "application/json"},json=data)
     print (response.json['data']['prediction'])
     assert response.status_code ==200
-
-
-
+    

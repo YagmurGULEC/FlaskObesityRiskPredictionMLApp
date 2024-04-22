@@ -28,9 +28,39 @@ Commands:
   create-map
 ```
 
+## How to run the code
+
+### Run with Makefile
+#### Installation 
+```bash
+make install
+```
+After downloading required packages and creating Python environment
+```bash
+make run
+```
+### Run with Docker
+```bash
+./run_docker.sh
+```
+## Get a prediction
+After running the web server with either way
+```bash
+./predict.sh 
+Port: 5000
+{"data":{"parameters":
+{"Age":21.0,
+"CAEC":"Sometimes",
+"CALC":"Sometimes","CH2O":2.0,"FAF":0.0,"FAVC":"yes","FCVC":2.0,"Gender":"Male",
+"Height":1.57,
+"MTRANS":"Public_Transportation",
+"NCP":3.0,"SCC":"no","SMOKE":"no",
+"TUE":1.0,
+"Weight":64.0,"family_history_with_overweight":"yes"},"prediction":"Obesity_Type_III"}}
+```
 ## About Dataset and Preprocessing 
 
-The obesity risk has seven different levels including:Insufficient Weight, Normal Weight, Overweight Level I, Overweight Level II, Obesity Type I, Obesity Type II and Obesity Type III. The label column is NObeyesdad. The other columns are features used for training. The number of features is 16, excluding 
+The obesity risk has seven different levels including:Insufficient Weight, Normal Weight, Overweight Level I, Overweight Level II, Obesity Type I, Obesity Type II and Obesity Type III. The label column is NObeyesdad. The other columns are features used for training. The number of features is 16. To have a detailed information of the explanation on the columns, please see in the link https://www.kaggle.com/datasets/aravindpcoder/obesity-or-cvd-risk-classifyregressorcluster.
 
 ```python 
 Index(['Gender', 'Age', 'Height', 'Weight', 'family_history_with_overweight',

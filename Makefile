@@ -38,3 +38,8 @@ clean:
 .PHONY: test
 test:
 	python -m pytest -s tests/
+
+## lint: run linter
+.PHONY: lint
+lint:
+	pylint --disable=R1725,W0631,W0621 app/*.py  --disable=C0303 tests/*.py
